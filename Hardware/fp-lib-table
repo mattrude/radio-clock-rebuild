@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ES100")(type "KiCad")(uri "${KIPRJMOD}/Components/Footprints/ES100.pretty")(options "")(descr "ES100 Time Module"))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Components/Footprints/Library.pretty")(options "")(descr ""))
+)
