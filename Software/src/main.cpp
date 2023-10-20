@@ -7,7 +7,8 @@
  * 
  * Version: 1.3 (10/26/2022)
  *
- * https://universal-solder.ca/product/canaduino-application-development-kit-with-everset-es100-mod-wwvb-bpsk-atomic-clock-receiver-module/
+ * https://universal-solder.ca/product/canaduino-application-development-kit
+ * -with-everset-es100-mod-wwvb-bpsk-atomic-clock-receiver-module/
  * 
  * NEW in 1.2: I2C bus clock speed reduced to 100kHz for better compatibility
  * with different RTC chips. The following libraries are required:
@@ -447,7 +448,7 @@ void setup() {
 
   Serial.println("ES100 Master Clock - Version 1.3");
   Serial.println("Matt Rude <matt@mattrude.com>");
-  Serial.println("https://github.com/mattrude/ES100-Demo");
+  Serial.println("https://github.com/mattrude/radio-clock-rebuild");
   Serial.println("");
 
   Serial.print("RTC Time: ");
