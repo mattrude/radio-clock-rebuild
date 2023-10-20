@@ -179,6 +179,7 @@ char* getISODateStr() {
   return result;
 }
 
+// Prints to LCD if DST is in Effect or not
 void displayDST() {
   lcd.print("DST ");
   switch (status0.dstState) {
@@ -197,6 +198,7 @@ void displayDST() {
   }
 }
 
+// Prints to LCD the Next DST Date of change
 void displayNDST() {
   byte tmp = 0;
   lcd.print("NDST ");
@@ -217,6 +219,7 @@ void displayNDST() {
   lcd.print(":00");
 }
 
+// Prints to LCD if this month has a leep second
 void displayLeapSecond() {
   switch (status0.leapSecond) {
     case B00:
@@ -231,6 +234,7 @@ void displayLeapSecond() {
   }
 }
 
+// Prints to LCD when the last time sync was (the date/time of it)
 void displayLastSync() {
   lcd.print("Last sync ");
 
@@ -281,11 +285,13 @@ void displayLastSync() {
   }
 }
 
+// Prints to LCD the current interrupt count
 void displayInterrupt() {
   lcd.print("Interrupt Count ");
   lcd.print(interruptCnt);
 }
 
+// Prints to LCD the currnt Time Zone
 void displayTimeZone() {
   lcd.print("Time Zone ");
   if ( timeZone == -5 ) {
@@ -424,6 +430,10 @@ void showlcd() {
   //   Antenna used x    /* Antenna Used for reception where x = 1 or 2 */
 }
 
+
+/******************************************************************************
+ * 
+ */
 
 void setup() {
   Wire.begin();
