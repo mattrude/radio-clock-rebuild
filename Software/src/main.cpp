@@ -71,16 +71,16 @@ bool daylightSavings = true;
 #include <EEPROM.h>
 #include <ES100.h>
 
-#define lcdRS 4
-#define lcdEN 5
-#define lcdD4 8
-#define lcdD5 9
-#define lcdD6 10
-#define lcdD7 11
+#define lcdRS 4  // D4: Pin 6 on ATmega328P
+#define lcdEN 5  // D5: Pin 11 on ATmega328P
+#define lcdD4 8  // D8: Pin 14 on ATmega328P
+#define lcdD5 9  // D9: Pin 15 on ATmega328P
+#define lcdD6 10 // D10: in 16 on ATmega328P
+#define lcdD7 11 // D11: in 17 on ATmega328P
 LiquidCrystal lcd(lcdRS, lcdEN, lcdD4, lcdD5, lcdD6, lcdD7);
 
-#define es100Int 2
-#define es100En 13
+#define es100Int 2 // D2: Pin 4 on ATmega328P
+#define es100En 13 // D13: Pin 19 on ATmega328P
 
 ES100 es100;
 
